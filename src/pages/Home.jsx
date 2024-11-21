@@ -57,8 +57,10 @@ export default function Home() {
             um pouco dos nossos criadores:
           </p>
 
+          <div className="divider"></div>
+
           {/* criadores */}
-          <div className="mt-10 flex flex-col justify-evenly gap-10 md:flex-row">
+          <div className="mt-16 flex flex-col justify-evenly gap-10 md:flex-row">
             <div className="flex flex-col items-center">
               <img src={Bruno} alt="Bruno" className="h-20 w-20 rounded-full" />
               <h3 className="text-lg font-bold">Bruno Raniere</h3>
@@ -124,12 +126,15 @@ export default function Home() {
             apenas bater um papo. Estamos ansiosos para ouvir você!
           </p>
 
-          <form className="mx-auto mt-10 flex max-w-xl flex-col gap-2">
+          <form className="mx-auto mt-10 flex flex-col gap-2">
             <input type="text" placeholder="Nome" className="input" />
 
             <input type="email" placeholder="E-mail" className="input" />
 
-            <textarea placeholder="Mensagem" className="input"></textarea>
+            <textarea
+              placeholder="Mensagem"
+              className="input h-96 resize-none"
+            ></textarea>
 
             <button type="submit" className="button-primary mx-auto mt-5">
               Enviar
